@@ -96,8 +96,8 @@ export function useChat() {
     setCurrentChat("...");
 
     if (!res.ok || !res.body) {
-      console.log(res.ok)
-      console.log(res.body)
+      console.log(res.ok);
+      console.log(res.body);
       setState("idle");
       return;
     }
