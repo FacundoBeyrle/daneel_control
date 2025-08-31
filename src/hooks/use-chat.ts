@@ -91,6 +91,7 @@ export function useChat() {
       body,
       method: "POST",
       signal: abortController.signal,
+      headers: { "Content-Type": "application/json" },
     });
     
     setCurrentChat("...");
